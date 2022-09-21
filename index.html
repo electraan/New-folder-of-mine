@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suzuki Freewind</title>
+  </head>
+  <div class = "card">
+    <div class="card-body">
+    <body>
+      <style>
+        body {
+            background: linear-gradient(109.5deg, rgb(249, 252, 214) 11.2%, rgb(224, 200, 175) 100.2%);
+        }
+        h1 {
+          display: block;
+          text-align: center;
+          margin: 30px auto;
+          padding: 15px 30px;
+          max-width: 60%;
+          border: 1px solid #80595E;
+          border-radius: 4px;
+        }
+
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          border-radius: 3%;
+        }
+        .paragraph {
+          display: block;
+          margin: 0 auto;
+          max-width: 80%;
+        }
+        p {
+            font-size: 18px;
+            opacity: 0.7;
+            text-align:justify;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        ul {
+            color:black;
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        a {
+            color: black;
+        }
+
+            li {
+            display: inline;
+            margin: 0 15px;
+            text-shadow: #80595E;
+        }
+        li.hover {
+            text-decoration: none;
+            background: #fffbef;
+            color:#80595E;
+            font-weight: bold;
+        }
+        button {
+        display: block;
+        font-size: 16px;
+        padding: 15px 50px;
+        margin: 20px auto;
+        color:#80595E;
+        background-color: transparent;
+        border: 1px solid #80595E;
+        border-radius: 5px;
+        box-shadow: 0px 10px 20px rgba(0 0 0 / 20%);
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        color: white;
+        background:#80595E;
+        cursor: pointer;
+        }
+
+        .info {
+            text-align: center;
+            font-size: 12px;
+        }
+        .contact {
+            color: #80595E;
+        }
+        .card-body {
+          display: block;
+          padding: 0 auto;
+          border-color:#80595E;
+          border-style: solid;
+          border-width: 1px;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          border-radius: 5px;
+          margin: 30px auto;
+          max-width: 500pt;
+        }
+      </style>
+      <h1>
+        Suzuki XF650 <br />
+        <em>POWER AND FREEDOM</em>
+      </h1>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/242/original/Free2.jpg?1661177174"
+        alt="Suzuki XF650 (Freewind)"
+      />
+<div class="paragraph">
+      <p>
+        I am happy I bought the bike;
+        <strong>it's the most reliable bike I ever owned...</strong>
+        simple, rugged, reliable and a very durable bike... still runs great
+        with no problem at all, starts fine first kick, cold or warm. <br />
+
+        I mostly use it on the highway with no problem at all, cruising at
+        140km/hr all day. Mine tops at 170km/hr using 15t front and 41t rear
+        sprockets, and is also very stable at speed compared to other big single
+        cylinder bikes.
+      </p>
+      <ul>
+        <li> 🔧
+          <a
+            href="https://www.webbikeworld.com/2021-suzuki-dr650s/"
+            target="_blank"
+            >Specifications</a
+          >
+        </li>
+        <li> ✔
+          <a
+            href="http://www.motorcyclesurvey.com/reviews/suzuki/xf650_freewind/"
+            target="_blank"
+            >Reviews</a
+          >
+        </li>
+        <li> 🤓
+          <a
+            href="https://www.bikerglory.com/reviews/suzuki-xf650-freewind-freestyle/"
+            target="_blank"
+            >Find out more!</a
+          >
+        </li>
+      </ul>
+</div>
+<hr>
+      <button><strong>My motorcycle adventures</strong></button>
+      <script>
+        function myBike(){
+            let name = prompt("What`s your name?");
+            if (name.length <=1) {
+                alert ("Enter valid values!");
+                prompt("What`s your name?");
+            }
+            let age = prompt("Age?");
+            if (age.length <1) {
+                alert ("Enter valid values!");
+                prompt("Age?");
+            }
+            if (age < 18 && name.length >0) {
+                let h1 = document.querySelector("h1");
+          h1.innerHTML =
+            "😢<br/>"+ name + ", You can`t drive bike yet <br/> Come back later with your story!";
+            } else 
+                if (age >17 && name.length >0) {
+                let bike = prompt("What bike you drive?");
+                alert ("Hey "+ name + "! " + "Tell me a story about your " + bike +"!");
+            }
+        }
+
+        let storyButton = document.querySelector("button");
+        storyButton.addEventListener("click", myBike);
+      </script>
+
+      <p><div class="info">
+    <span class="contact">Created by: </span><a href="https://www.linkedin.com/in/antonina-melnichuk-52439283/"
+    target="_blank">Antonina Ieremenko</a><br>
+<span class="contact">Email: </span>electra.an@gmail.com</div></p>
+    </body>
+  </div>
+</div>
+</html>
